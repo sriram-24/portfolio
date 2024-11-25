@@ -1,0 +1,56 @@
+---
+import '@/styles/globals.css'
+import Navigation from '@/components/Navigation'
+const {pageTitle} = Astro.props
+---
+
+<html lang="en">
+	<head>
+		<meta charset="" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{pageTitle}</title>
+		<script is:inline>
+			function setDarkMode(document) {
+			  const getThemePreference = () => {
+				if (
+				  typeof localStorage !== 'undefined' &&
+				  localStorage.getItem('theme')
+				) {
+				  return localStorage.getItem('theme');
+				}
+				return window.matchMedia('(prefers-color-scheme: dark)').matches
+				  ? 'dark'
+				  : 'theme-light';
+			  };
+			  const isDark = getThemePreference() === 'dark';
+			  document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+		  
+			  if (typeof localStorage !== 'undefined') {
+				const observer = new MutationObserver(() => {
+				  const isDark = document.documentElement.classList.contains('dark');
+				  localStorage.setItem('theme', isDark ? 'dark' : 'theme-light');
+				});
+				observer.observe(document.documentElement, {
+				  attributes: true,
+				  attributeFilter: ['class'],
+				});
+			  }
+			}
+		  
+			setDarkMode(document);
+		  
+			document.addEventListener('astro:before-swap', (ev) => {
+			  // Pass the incoming document to set the theme on it
+			  setDarkMode(ev.newDocument);
+			});
+		  </script>
+	</head>
+	<body class="" style="margin-right: 0px !important; ">
+		<main class="flex flex-col min-h-screen container mx-auto px-4 md:px-16 lg:px-64">
+			<Navigation client:load />
+            <slot/>
+		</main>
+	</body>
+</html>

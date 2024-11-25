@@ -1,16 +1,15 @@
 ---
-
+import '@/styles/globals.css'
+import MainLayout from '@/layout/MainLayout.astro'
+import Skills from '@/components/Skills'
+import HeroSection from '@/components/HeroSection'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>test</h1>
-	</body>
-</html>
+<MainLayout pageTitle="Home">
+	<section>
+		<HeroSection client:load />
+	</section>
+	<section>
+		<Skills client:load />
+	</section>
+</MainLayout>
