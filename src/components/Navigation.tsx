@@ -18,7 +18,7 @@ function Navigation() {
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuLink href='/blogs' className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink href='#projects' className={navigationMenuTriggerStyle()}>
                         Projects
                     </NavigationMenuLink>
                 </NavigationMenuItem>

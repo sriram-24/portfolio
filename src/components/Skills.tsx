@@ -1,13 +1,14 @@
 import React from 'react'
-import {user} from '@/constants/user'
+import { type ISkill} from '@/constants/user'
 import { motion } from "motion/react"
 
-interface Skill {
-	name : string,
-	icon:string
+interface ISkillprops{
+	title?:string,
+	skills : Array<ISkill>,
+	
 }
 
-function Skills() {
+function Skills({skills, title } : ISkillprops ) {
   return (
 	<motion.div className='mt-6'
 		initial={{ opacity: 0, y:-10 }}
@@ -18,17 +19,17 @@ function Skills() {
 		ease: 'easeIn'
 		}}
 	>
-		<h4 className='mb-4'>Skills</h4>
+		{title && <h4 className='mb-4'>{title}</h4>}
 		<div className='flex flex-wrap'>
 			{
-			user.skills? user.skills.map((skill) => <Skill key={skill.name} name={skill.name} icon={skill.icon} />) :<></>
+			skills? skills.map((skill : ISkill) => <Skill key={skill.name} name={skill.name} icon={skill.icon} />) :<></>
 			}
 		</div>
 	</motion.div>
   )
 }
 
-const Skill = ({name, icon} : Skill) => {
+const Skill = ({name, icon} : ISkill) => {
 	return (
 		<span className='pl-6 pr-6 pt-2 pb-2 m-2 bg-primary text-primary-foreground rounded-full'>{name}</span>
 	)

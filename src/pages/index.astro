@@ -3,6 +3,8 @@ import '@/styles/globals.css'
 import MainLayout from '@/layout/MainLayout.astro'
 import Skills from '@/components/Skills'
 import HeroSection from '@/components/HeroSection'
+import Projects from '@/components/Projects'
+import { user} from '@/constants/user'
 ---
 
 <MainLayout pageTitle="Home">
@@ -10,6 +12,9 @@ import HeroSection from '@/components/HeroSection'
 		<HeroSection client:load />
 	</section>
 	<section>
-		<Skills client:load />
+		<Skills title='Skills' skills={user.skills} client:load />
+	</section>
+	<section>
+		<Projects client:load/>
 	</section>
 </MainLayout>
