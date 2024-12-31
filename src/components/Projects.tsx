@@ -23,7 +23,7 @@ function Projects() {
 			}}
 		>
 			<h4 className='mb-4'>Projects</h4>
-			<div className='flex flex-wrap justify-between'>
+			<div className='flex flex-wrap gap-4 justify-normal'>
 				{
 					user.projects.map((project, index) => 
 					<Card className=' lg:max-w-80 mb-4'>

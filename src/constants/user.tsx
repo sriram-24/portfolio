@@ -125,6 +125,28 @@ export const user : IUser = {
 				
 			]
 		},
+		{
+			name:"noteappandroid",
+			description:"Basic android notes app with CRUD operations. Store notes in sqlite database in user's local storage.",
+			demo:"https://github.com/sriram-24/noteappandroid/releases/tag/1.0.0",
+			source:"https://github.com/sriram-24/noteappandroid",
+			techUsed:[
+				{
+					name:"Android",
+					icon:""
+				},
+				{
+					name:"Sqlite",
+					icon:""
+				},
+				{
+					name:"Kotlin",
+					icon:""
+				},
+				
+			]
+		},
+
 
 	]
 }
