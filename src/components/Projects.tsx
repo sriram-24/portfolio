@@ -3,7 +3,6 @@ import { motion } from "motion/react"
 import {
 	Card,
 	CardContent,
-	CardDescription,
 	CardFooter,
 	CardHeader,
 	CardTitle,
@@ -26,7 +25,7 @@ function Projects() {
 			<div className='flex flex-wrap gap-4 justify-normal'>
 				{
 					user.projects.map((project, index) => 
-					<Card className=' lg:max-w-80 mb-4'>
+					<Card className=' lg:max-w-80 mb-4' key={`project-`+index}>
 						<CardHeader>
 							<CardTitle className='text-lg'>{project.name}</CardTitle>
 							

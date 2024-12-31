@@ -23,7 +23,7 @@ function Navigation() {
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <NavigationMenuLink href='/contact' className={navigationMenuTriggerStyle()}>
+                    <NavigationMenuLink href='#contact' className={navigationMenuTriggerStyle()}>
                         Contact
                     </NavigationMenuLink>
                 </NavigationMenuItem>
