@@ -5,7 +5,7 @@ import { EnvelopeOpen, GithubLogo, LinkedinLogo } from '@phosphor-icons/react'
 
 function Contact() {
 	return (
-		<motion.div id='contact' className='mt-6'
+		<motion.div id='contact' className='mt-6 mb-6'
 			initial={{ opacity: 0, y: -10 }}
 			animate={{ opacity: 1, y: 0 }}
 			transition={{
