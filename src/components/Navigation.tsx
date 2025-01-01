@@ -1,6 +1,7 @@
 import React from 'react'
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from './ui/navigation-menu'
 import { ModeToggle } from './ModeToggle'
+import { AddressBook, Briefcase, Code, House } from '@phosphor-icons/react'
 
 function Navigation() {
   return (
@@ -9,22 +10,26 @@ function Navigation() {
             <NavigationMenuList className='flex'>
                 <NavigationMenuItem>
                     <NavigationMenuLink href='/' className={navigationMenuTriggerStyle()}>
-                        Home
+					<House size={18} className='mr-1' />
+                        <span>Home</span>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <NavigationMenuLink href='/about' className={navigationMenuTriggerStyle()}>
-                        Career
+					<Briefcase size={18} className='mr-1' />
+                       <span>Career</span> 
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <NavigationMenuLink href='#projects' className={navigationMenuTriggerStyle()}>
-                        Projects
+					<Code size={18} className='mr-1' />
+                       <span>Projects</span>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
                     <NavigationMenuLink href='#contact' className={navigationMenuTriggerStyle()}>
-                        Contact
+					<AddressBook size={18} className='mr-1' />
+                        <span>Contact</span>
                     </NavigationMenuLink>
                 </NavigationMenuItem>
                 <NavigationMenuItem className=''>
