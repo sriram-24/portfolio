@@ -8,7 +8,8 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
 	output:'static',
-  integrations: [react(), tailwind({
-	applyBaseStyles : false
-  })]
+	site: 'https://sriram-24.github.io',
+	integrations: [react(), tailwind({
+		applyBaseStyles : false
+  	})]
 });
