@@ -6,8 +6,8 @@ export interface ISkill{
 interface IProject{
 	name:String,
 	description:String,
-	demo:String,
-	source:String,
+	demo?:string,
+	source:string,
 	techUsed: Array<ISkill>
 }
 
@@ -111,7 +111,7 @@ export const user : IUser = {
 		{
 			name:"mendix-sdk-api",
 			description:"An express api to fetch the details of duplicated microflows, pages and nanoflows of mendix application using the mendix sdk.",
-			demo:"https://github.com/sriram-24/mendix-sdk-api",
+			
 			source:"https://github.com/sriram-24/mendix-sdk-api",
 			techUsed:[
 				{

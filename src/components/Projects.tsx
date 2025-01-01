@@ -7,8 +7,16 @@ import {
 	CardHeader,
 	CardTitle,
 } from "@/components/ui/card"
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipProvider,
+	TooltipTrigger,
+} from "@/components/ui/tooltip"
+
 import { user } from "@/constants/user"
 import Skills from './Skills'
+import { GithubLogo, Play } from '@phosphor-icons/react'
 
 function Projects() {
 	return (
@@ -24,19 +32,42 @@ function Projects() {
 			<h4 className='mb-4'>Projects</h4>
 			<div className='flex flex-wrap gap-4 justify-normal'>
 				{
-					user.projects.map((project, index) => 
-					<Card className=' lg:max-w-80 mb-4' key={`project-`+index}>
-						<CardHeader>
-							<CardTitle className='text-lg'>{project.name}</CardTitle>
-							
-						</CardHeader>
-						<CardContent>
-							<p>{project.description}</p>
-						</CardContent>
-						<CardFooter>
-							<Skills skills={project.techUsed} />
-						</CardFooter>
-					</Card>)
+					user.projects.map((project, index) =>
+						<Card key={`project-` + index} className=' lg:max-w-80 mb-4 hover:drop-shadow-card filter hover:transition-all duration-500'>
+							<CardHeader className='flex flex-row justify-between'>
+								<CardTitle className='text-lg'>{project.name}</CardTitle>
+								<div className='flex flex-row gap-2'>
+									{project.source &&
+										<TooltipProvider>
+											<Tooltip>
+												<TooltipTrigger><a href={project.source} target='_blank'><GithubLogo size={28} /></a></TooltipTrigger>
+												<TooltipContent>
+													<p className='font-bold'>View source code</p>
+												</TooltipContent>
+											</Tooltip>
+										</TooltipProvider>
+									}
+									{
+										project.demo &&
+										<TooltipProvider>
+											<Tooltip>
+												<TooltipTrigger><a href={project.demo} target='_blank'><Play size={28} /></a></TooltipTrigger>
+												<TooltipContent>
+													<p className='font-bold'>View demo</p>
+												</TooltipContent>
+											</Tooltip>
+										</TooltipProvider>
+
+									}
+								</div>
+							</CardHeader>
+							<CardContent>
+								<p>{project.description}</p>
+							</CardContent>
+							<CardFooter>
+								<Skills skills={project.techUsed} />
+							</CardFooter>
+						</Card>)
 				}
 			</div>
 		</motion.div>
