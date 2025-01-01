@@ -3,87 +3,87 @@
 @tailwind utilities;
 @layer base {
 	:root {
-	  --background: 51, 46%, 88%;
-	  --foreground: 202, 11%, 40%;
-	  --card: 0 0% 100%;
-	  --card-foreground: 240 10% 3.9%;
-	  --popover: 62, 53%, 88%;
-	  --popover-foreground: 202, 11%, 40%;
-	  --primary: 81, 37%, 52%;
-	  --primary-foreground: 65, 51%, 86%;
-	  --secondary: 240 4.8% 95.9%;
-	  --secondary-foreground: 240 5.9% 10%;
-	  --muted: 78, 14%, 73%;
-	  --muted-foreground: 116, 7%, 54%;
-	  --accent: 240 4.8% 95.9%;
-	  --accent-foreground: 240 5.9% 10%;
-	  --destructive: 0, 72%, 65%;
-	  --destructive-foreground: 0 0% 98%;
-	  --border: 240 5.9% 90%;
-	  --input: 240 5.9% 90%;
-	  --ring: 142.1 76.2% 36.3%;
-	  --radius: 0.5rem;
-	  --contact : 43, 100%, 44%;
-	  --contact-foreground : 65, 51%, 86%;
+		--background: 51, 46%, 88%;
+		--foreground: 202, 11%, 40%;
+		--card: 0 0% 100%;
+		--card-foreground: 240 10% 3.9%;
+		--popover: 62, 53%, 88%;
+		--popover-foreground: 202, 11%, 40%;
+		--primary: 81, 37%, 52%;
+		--primary-foreground: 65, 51%, 86%;
+		--secondary: 240 4.8% 95.9%;
+		--secondary-foreground: 240 5.9% 10%;
+		--muted: 78, 14%, 73%;
+		--muted-foreground: 116, 7%, 54%;
+		--accent: 240 4.8% 95.9%;
+		--accent-foreground: 240 5.9% 10%;
+		--destructive: 0, 72%, 65%;
+		--destructive-foreground: 0 0% 98%;
+		--border: 240 5.9% 90%;
+		--input: 240 5.9% 90%;
+		--ring: 142.1 76.2% 36.3%;
+		--radius: 0.5rem;
+		--contact: 43, 100%, 44%;
+		--contact-foreground: 65, 51%, 86%;
 	}
-  
+
 	.dark {
-	  --background:202, 14%, 16%;
-	  --foreground: 41, 32%, 75%;
-	  --card: 24 9.8% 10%;
-	  --card-foreground: 0 0% 95%;
-	  --popover: 0 0% 9%;
-	  --popover-foreground: 0 0% 95%;
-	  --primary: 83, 34%, 63%;
-	  --primary-foreground: 206, 13%, 20%;
-	  --secondary: 240 3.7% 15.9%;
-	  --secondary-foreground: 0 0% 98%;
-	  --muted: 0 0% 15%;
-	  --muted-foreground: 83, 34%, 63%;
-	  --accent: 83, 34%, 63%;
-	  --accent-foreground:206, 13%, 20%;
-	  --destructive: 359, 68%, 70%;
-	  --destructive-foreground: 0 85.7% 97.3%;
-	  --border: 240 3.7% 15.9%;
-	  --input: 240 3.7% 15.9%;
-	  --ring: 142.4 71.8% 29.2%;
-	  --contact : 40, 56%, 68%;
-	  --contact-foreground :  206, 13%, 20%;
+		--background: 202, 14%, 16%;
+		--foreground: 41, 32%, 75%;
+		--card: 24 9.8% 10%;
+		--card-foreground: 0 0% 95%;
+		--popover: 0 0% 9%;
+		--popover-foreground: 0 0% 95%;
+		--primary: 83, 34%, 63%;
+		--primary-foreground: 206, 13%, 20%;
+		--secondary: 240 3.7% 15.9%;
+		--secondary-foreground: 0 0% 98%;
+		--muted: 0 0% 15%;
+		--muted-foreground: 83, 34%, 63%;
+		--accent: 83, 34%, 63%;
+		--accent-foreground: 206, 13%, 20%;
+		--destructive: 359, 68%, 70%;
+		--destructive-foreground: 0 85.7% 97.3%;
+		--border: 240 3.7% 15.9%;
+		--input: 240 3.7% 15.9%;
+		--ring: 142.4 71.8% 29.2%;
+		--contact: 40, 56%, 68%;
+		--contact-foreground: 206, 13%, 20%;
 	}
 }
 @layer base {
-  * {
-    @apply border-border;
-  }
-  body {
-    @apply bg-background text-foreground;
-  }
-  h1 {
-    @apply text-4xl;
-    @apply font-bold;
-  }
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+	h1 {
+		@apply text-4xl;
+		@apply font-bold;
+	}
 	h2 {
-    @apply text-3xl;
-    @apply font-bold;
-  }
+		@apply text-3xl;
+		@apply font-bold;
+	}
 	h3 {
-    @apply text-2xl;
-    @apply font-bold;
-  }
+		@apply text-2xl;
+		@apply font-bold;
+	}
 	h4 {
-    @apply text-xl;
-    @apply font-semibold;
-  }
+		@apply text-xl;
+		@apply font-semibold;
+	}
 	h5 {
-    @apply text-lg;
-    @apply font-semibold;
-  }
+		@apply text-lg;
+		@apply font-semibold;
+	}
 	h6 {
-    @apply text-sm;
-    @apply font-semibold;
-  }
+		@apply text-sm;
+		@apply font-semibold;
+	}
 }
 
-html{
+html {
 	scroll-behavior: smooth;
 }

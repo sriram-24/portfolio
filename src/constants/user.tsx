@@ -1,17 +1,17 @@
-export interface ISkill{
-	name:string,
-	icon:string
+export interface ISkill {
+	name: string,
+	icon: string
 }
 
-interface IProject{
-	name:String,
-	description:String,
-	demo?:string,
-	source:string,
+interface IProject {
+	name: String,
+	description: String,
+	demo?: string,
+	source: string,
 	techUsed: Array<ISkill>
 }
 
-export enum ContactType{
+export enum ContactType {
 	email = "Email",
 	github = "github",
 	linkedin = "linkedin",
@@ -19,159 +19,159 @@ export enum ContactType{
 }
 
 export interface IContact {
-	type : ContactType,
-	link:string
+	type: ContactType,
+	link: string
 }
 
-interface IUser{
-	fullName : String,
-	profileDescription : String,
-	skills : Array<ISkill>,
-	projects : Array<IProject>,
-	contacts : Array<IContact>
+interface IUser {
+	fullName: String,
+	profileDescription: String,
+	skills: Array<ISkill>,
+	projects: Array<IProject>,
+	contacts: Array<IContact>
 }
 
 
-export const user : IUser = {
-	fullName : "Sriram Manoharan",
-	profileDescription : "I'm a software engineer who is interested in learning new things and improve my skills in programming. I spend my free time by listening to music and playing games. I'd like to collaborate on open-source and work as a team.",
-	skills : [
+export const user: IUser = {
+	fullName: "Sriram Manoharan",
+	profileDescription: "I'm a software engineer who is interested in learning new things and improve my skills in programming. I spend my free time by listening to music and playing games. I'd like to collaborate on open-source and work as a team.",
+	skills: [
 		{
-			name:'Javascript',
-			icon:''
+			name: 'Javascript',
+			icon: ''
 		},
 		{
-			name:'React',
-			icon:''
+			name: 'React',
+			icon: ''
 		},
 		{
-			name:'Java',
-			icon:''
+			name: 'Java',
+			icon: ''
 		},
 		{
-			name:'SQL',
-			icon:''
+			name: 'SQL',
+			icon: ''
 		},
 		{
-			name:'Mendix',
-			icon:''
+			name: 'Mendix',
+			icon: ''
 		},
 		{
-			name:'REST',
-			icon:''
+			name: 'REST',
+			icon: ''
 		},
 		{
-			name:'Git',
-			icon:''
+			name: 'Git',
+			icon: ''
 		},
 	],
-	projects : [
+	projects: [
 		{
-			name:"Pin Input",
-			description:"Pin Input is a widget used for entering sequence of inputs in a separate input boxes. This widget will provide a modern look and feel for entering the OTP or PIN inputs instead of using a plain input text widget. It is built on top of a @zagjs/pin-input react component.",
-			demo:"https://marketplace.mendix.com/link/component/224180",
-			source:"https://github.com/sriram-24/PinInputMendix",
-			techUsed:[
+			name: "Pin Input",
+			description: "Pin Input is a widget used for entering sequence of inputs in a separate input boxes. This widget will provide a modern look and feel for entering the OTP or PIN inputs instead of using a plain input text widget. It is built on top of a @zagjs/pin-input react component.",
+			demo: "https://marketplace.mendix.com/link/component/224180",
+			source: "https://github.com/sriram-24/PinInputMendix",
+			techUsed: [
 				{
-					name:"React",
-					icon:""
+					name: "React",
+					icon: ""
 				},
 				{
-					name:"Mendix",
-					icon:""
-				},
-				
-			]
-		},
-		{
-			name:"next-note-app",
-			description:"A basic note app with CRUD operations for learning the concepts of react and NextJS. This app includes creating a new note, editing notes, deleting notes and search for existing notes in the application.",
-			demo:"https://next-note-app-six.vercel.app/",
-			source:"https://github.com/sriram-24/next-note-app",
-			techUsed:[
-				{
-					name:"React",
-					icon:""
-				},
-				{
-					name:"NextJS",
-					icon:""
-				},
-				{
-					name:"MongoDB",
-					icon:""
+					name: "Mendix",
+					icon: ""
 				},
 
 			]
 		},
 		{
-			name:"neo-editor-lexical",
-			description:"A simple rich text editor using lexical framework. It has basic functionalities like font variants, font sizes, headings, underline text, Italics and code fence. Main focus of this project is to understand the  framework capabilities and customizing editors.",
-			demo:"https://neo-editor-lexical.vercel.app/",
-			source:"https://github.com/sriram-24/neo-editor-lexical",
-			techUsed:[
+			name: "next-note-app",
+			description: "A basic note app with CRUD operations for learning the concepts of react and NextJS. This app includes creating a new note, editing notes, deleting notes and search for existing notes in the application.",
+			demo: "https://next-note-app-six.vercel.app/",
+			source: "https://github.com/sriram-24/next-note-app",
+			techUsed: [
 				{
-					name:"React",
-					icon:""
+					name: "React",
+					icon: ""
 				},
 				{
-					name:"NextJS",
-					icon:""
+					name: "NextJS",
+					icon: ""
 				},
-				
+				{
+					name: "MongoDB",
+					icon: ""
+				},
+
 			]
 		},
 		{
-			name:"mendix-sdk-api",
-			description:"An express api to fetch the details of duplicated microflows, pages and nanoflows of mendix application using the mendix sdk.",
-			
-			source:"https://github.com/sriram-24/mendix-sdk-api",
-			techUsed:[
+			name: "neo-editor-lexical",
+			description: "A simple rich text editor using lexical framework. It has basic functionalities like font variants, font sizes, headings, underline text, Italics and code fence. Main focus of this project is to understand the  framework capabilities and customizing editors.",
+			demo: "https://neo-editor-lexical.vercel.app/",
+			source: "https://github.com/sriram-24/neo-editor-lexical",
+			techUsed: [
 				{
-					name:"Express",
-					icon:""
+					name: "React",
+					icon: ""
 				},
 				{
-					name:"NodeJS",
-					icon:""
+					name: "NextJS",
+					icon: ""
 				},
-				
+
 			]
 		},
 		{
-			name:"noteappandroid",
-			description:"Basic android notes app with CRUD operations. Store notes in sqlite database in user's local storage.",
-			demo:"https://github.com/sriram-24/noteappandroid/releases/tag/1.0.0",
-			source:"https://github.com/sriram-24/noteappandroid",
-			techUsed:[
+			name: "mendix-sdk-api",
+			description: "An express api to fetch the details of duplicated microflows, pages and nanoflows of mendix application using the mendix sdk.",
+
+			source: "https://github.com/sriram-24/mendix-sdk-api",
+			techUsed: [
 				{
-					name:"Android",
-					icon:""
+					name: "Express",
+					icon: ""
 				},
 				{
-					name:"Sqlite",
-					icon:""
+					name: "NodeJS",
+					icon: ""
+				},
+
+			]
+		},
+		{
+			name: "noteappandroid",
+			description: "Basic android notes app with CRUD operations. Store notes in sqlite database in user's local storage.",
+			demo: "https://github.com/sriram-24/noteappandroid/releases/tag/1.0.0",
+			source: "https://github.com/sriram-24/noteappandroid",
+			techUsed: [
+				{
+					name: "Android",
+					icon: ""
 				},
 				{
-					name:"Kotlin",
-					icon:""
+					name: "Sqlite",
+					icon: ""
 				},
-				
+				{
+					name: "Kotlin",
+					icon: ""
+				},
+
 			]
 		},
 	],
-	contacts : [
+	contacts: [
 		{
-			type:ContactType.email,
-			link : "mailto:sriram1999m@gmail.com?body=Hi%20there%2C%0A%0AI%20just%20visited%20your%20portfolio%20and%20would%20like%20to%20hear%20more%20from%20you.%20"
+			type: ContactType.email,
+			link: "mailto:sriram1999m@gmail.com?body=Hi%20there%2C%0A%0AI%20just%20visited%20your%20portfolio%20and%20would%20like%20to%20hear%20more%20from%20you.%20"
 		},
 		{
-			type:ContactType.github,
-			link : "https://github.com/sriram-24"
+			type: ContactType.github,
+			link: "https://github.com/sriram-24"
 		},
 		{
-			type:ContactType.linkedin,
-			link : "https://www.linkedin.com/in/sriram1999"
+			type: ContactType.linkedin,
+			link: "https://www.linkedin.com/in/sriram1999"
 		},
 	]
 }

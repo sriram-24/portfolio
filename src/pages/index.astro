@@ -1,11 +1,11 @@
 ---
-import '@/styles/globals.css'
-import MainLayout from '@/layout/MainLayout.astro'
-import Skills from '@/components/Skills'
-import HeroSection from '@/components/HeroSection'
-import Projects from '@/components/Projects'
-import { user} from '@/constants/user'
-import Contact from '@/components/Contact'
+import "@/styles/globals.css";
+import MainLayout from "@/layout/MainLayout.astro";
+import Skills from "@/components/Skills";
+import HeroSection from "@/components/HeroSection";
+import Projects from "@/components/Projects";
+import { user } from "@/constants/user";
+import Contact from "@/components/Contact";
 ---
 
 <MainLayout pageTitle="Home">
@@ -13,12 +13,12 @@ import Contact from '@/components/Contact'
 		<HeroSection client:load />
 	</section>
 	<section>
-		<Skills title='Skills' skills={user.skills} client:load />
+		<Skills title="Skills" skills={user.skills} client:load />
 	</section>
 	<section>
-		<Projects client:load/>
+		<Projects client:load />
 	</section>
 	<section>
-		<Contact client:load/>
+		<Contact client:load />
 	</section>
 </MainLayout>
