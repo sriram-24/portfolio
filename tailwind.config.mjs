@@ -50,7 +50,12 @@ export default {
     				'4': 'hsl(var(--chart-4))',
     				'5': 'hsl(var(--chart-5))'
     			}
-    		}
+    		},
+			dropShadow:{
+				'card' : ['8px 8px 7px rgba(166, 176, 160, 0.25)'],
+				
+			},
+			
     	}
     },
 	plugins: [require("tailwindcss-animate")],
