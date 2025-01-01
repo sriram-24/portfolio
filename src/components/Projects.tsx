@@ -62,9 +62,9 @@ function Projects() {
 								</div>
 							</CardHeader>
 							<CardContent>
-								<p>{project.description}</p>
+								<p >{project.description}</p>
 							</CardContent>
-							<CardFooter>
+							<CardFooter className='flex flex-row items-end'>
 								<Skills skills={project.techUsed} />
 							</CardFooter>
 						</Card>)
