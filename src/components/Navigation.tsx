@@ -7,7 +7,7 @@ function Navigation() {
   return (
     <div className='w-full p-2 flex items-center justify-center'>
         <NavigationMenu className='w-full'>
-            <NavigationMenuList className='flex'>
+            <NavigationMenuList className='flex flex-wrap'>
                 <NavigationMenuItem>
                     <NavigationMenuLink href='/' className={navigationMenuTriggerStyle()}>
 					<House size={18} className='mr-1' />

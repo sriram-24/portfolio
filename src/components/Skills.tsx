@@ -31,7 +31,7 @@ function Skills({skills, title } : ISkillprops ) {
 
 const Skill = ({name, icon} : ISkill) => {
 	return (
-		<span className='pl-4 pr-4 pt-1 pb-1 m-2 bg-primary text-primary-foreground rounded-full text-sm font-semibold'>{name}</span>
+		<span className='pl-4 pr-4 pt-1 pb-1 m-2 bg-primary text-primary-foreground rounded-full text-sm font-semibold cursor-default'>{name}</span>
 	)
 }
 
