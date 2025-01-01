@@ -11,17 +11,30 @@ interface IProject{
 	techUsed: Array<ISkill>
 }
 
+export enum ContactType{
+	email = "Email",
+	github = "github",
+	linkedin = "linkedin",
+
+}
+
+export interface IContact {
+	type : ContactType,
+	link:string
+}
+
 interface IUser{
 	fullName : String,
 	profileDescription : String,
 	skills : Array<ISkill>,
-	projects : Array<IProject>
+	projects : Array<IProject>,
+	contacts : Array<IContact>
 }
 
 
 export const user : IUser = {
 	fullName : "Sriram Manoharan",
-	profileDescription : "I'm a developer who is interested in learning new things and improve my skills in programming. I spend my free time by listening to music and playing games. I'd like to collaborate on open-source and work as a team.",
+	profileDescription : "I'm a software engineer who is interested in learning new things and improve my skills in programming. I spend my free time by listening to music and playing games. I'd like to collaborate on open-source and work as a team.",
 	skills : [
 		{
 			name:'Javascript',
@@ -146,7 +159,19 @@ export const user : IUser = {
 				
 			]
 		},
-
-
+	],
+	contacts : [
+		{
+			type:ContactType.email,
+			link : "mailto:sriram1999m@gmail.com?body=Hi%20there%2C%0A%0AI%20just%20visited%20your%20portfolio%20and%20would%20like%20to%20hear%20more%20from%20you.%20"
+		},
+		{
+			type:ContactType.github,
+			link : "https://github.com/sriram-24"
+		},
+		{
+			type:ContactType.linkedin,
+			link : "https://www.linkedin.com/in/sriram1999"
+		},
 	]
 }
