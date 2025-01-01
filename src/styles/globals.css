@@ -23,6 +23,8 @@
 	  --input: 240 5.9% 90%;
 	  --ring: 142.1 76.2% 36.3%;
 	  --radius: 0.5rem;
+	  --contact : 43, 100%, 44%;
+	  --contact-foreground : 65, 51%, 86%;
 	}
   
 	.dark {
@@ -45,6 +47,8 @@
 	  --border: 240 3.7% 15.9%;
 	  --input: 240 3.7% 15.9%;
 	  --ring: 142.4 71.8% 29.2%;
+	  --contact : 40, 56%, 68%;
+	  --contact-foreground :  206, 13%, 20%;
 	}
 }
 @layer base {
