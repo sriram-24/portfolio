@@ -1,47 +1,55 @@
-# Astro Starter Kit: Minimal
+# Portfolio (Personal)
 
-```sh
-npm create astro@latest -- --template minimal
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+
+A personal portfolio site with configurable contents like hero section, projects, skills and contact information. This repository contains the source code of [my portfolio](https://sriram-24.github.io/).
+
+## Installing
+
+Clone the project 
+
+```bash
+git clone https://github.com/sriram-24/portfolio.git
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+or [download](https://github.com/sriram-24/portfolio/archive/refs/heads/main.zip) from github.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Running the project
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```bash
+npm install
+npm run dev
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Usage
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+- To change the contents of profile go to `src/constants/user.ts`.
+- Feel free to edit the source code and publish your site.
 
-Any static assets, like images, can be placed in the `public/` directory.
+> Note : The icons for `skills` and `techUsed` will not take effect on the site as it is not implemented yet.
 
-## 🧞 Commands
+## Deploying/ publishing
 
-All commands are run from the root of the project, from a terminal:
+Checkout the astro [docs](https://docs.astro.build/en/guides/deploy/) for deploying it in various providers.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Deploying as static site (github)
 
-## 👀 Want to learn more?
+You can follow the deployment [guide](https://docs.astro.build/en/guides/deploy/github/) for building from source in github or you can deploy only the static files like [me](https://github.com/sriram-24/sriram-24.github.io)
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+build the project 
+
+```bash
+npm run build
+```
+Push the content to github page repo. 
+
+Choose the static site generator template from github settings or create github workflow for static site to deploy in github pages.
+
+## Contributing
+
+If you like this template and want to contribute, Fork this project and create a PR.
+
+## Issues 
+
+Create an issue [here.](https://github.com/sriram-24/portfolio/issues/new)
+
