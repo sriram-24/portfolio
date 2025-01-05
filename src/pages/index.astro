@@ -6,11 +6,15 @@ import HeroSection from "@/components/HeroSection";
 import Projects from "@/components/Projects";
 import { user } from "@/constants/user";
 import Contact from "@/components/Contact";
+import Career from "@/components/Career";
 ---
 
 <MainLayout pageTitle="Home">
 	<section>
 		<HeroSection client:load />
+	</section>
+	<section>
+		<Career client:load />
 	</section>
 	<section>
 		<Skills title="Skills" skills={user.skills} client:load />

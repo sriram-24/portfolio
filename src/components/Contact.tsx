@@ -18,7 +18,7 @@ function Contact() {
 			<div className='flex flex-wrap gap-12 justify-center items-center  bg-contact text-contact-foreground h-64 p-6 rounded-lg'>
 				{
 					user.contacts.map((contact: IContact, index) =>
-						<motion.div
+						<motion.div key={`contact-`+index}
 							whileHover={{ scale: 1.2 }}
 							className='sm:min-h-8 sm:min-w-8 md:min-h-16 md:min-w-16  p-2 flex flex-col  items-center rounded-lg '
 						>

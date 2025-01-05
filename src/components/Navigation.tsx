@@ -15,7 +15,7 @@ function Navigation() {
 						</NavigationMenuLink>
 					</NavigationMenuItem>
 					<NavigationMenuItem>
-						<NavigationMenuLink href='#' className={navigationMenuTriggerStyle()}>
+						<NavigationMenuLink href='#career' className={navigationMenuTriggerStyle()}>
 							<Briefcase size={18} className='mr-1' />
 							<span>Career</span>
 						</NavigationMenuLink>
